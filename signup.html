@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Create Your Account</h1>
+  </header>
+  <main>
+    <form action="submit_signup.html" method="post">
+      <p>Join us and take the first step towards water conservation awareness.</p>
+      
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Choose a unique username" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+      
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+
+      <button type="submit">Signup</button>
+
+      <div class="social-login">
+        <p>Or signup with:</p>
+        <button type="button" class="social-btn google">Google</button>
+        <button type="button" class="social-btn facebook">Facebook</button>
+      </div>
+      
+      <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </form>
+  </main>
+  <footer>
+    <p>© 2024 Water Conservation Wiki</p>
+  </footer>
+</body>
+</html>

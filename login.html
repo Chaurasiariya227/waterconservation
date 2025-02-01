@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Login to Your Account</h1>
+  </header>
+  <main>
+    <form action="submit_login.html" method="post">
+      <p>Welcome back! Access your account to explore our resources.</p>
+
+      <label for="username">Username or Email:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <button type="submit">Login</button>
+
+      <div class="social-login">
+        <p>Or login with:</p>
+        <button type="button" class="social-btn google">Google</button>
+        <button type="button" class="social-btn facebook">Facebook</button>
+      </div>
+
+      <p><a href="#">Forgot your password?</a></p>
+      <p>Don't have an account? <a href="signup.html">Signup here</a>.</p>
+    </form>
+  </main>
+  <footer>
+    <p>© 2024 Water Conservation Wiki</p>
+  </footer>
+</body>
+</html>

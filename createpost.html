@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="createpost.css">
+</head>
+<body>
+  <div id="create-post-container">
+    <h1>Create a New Post</h1>
+    <form id="create-post-form">
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="title" placeholder="Enter post title" required>
+
+      <label for="post-content">Content</label>
+      <textarea id="post-content" name="content" placeholder="Write your post here..." rows="6" required></textarea>
+
+      <button type="submit" class="submit-button">Submit Post</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Water Conservation Knowledge Hub</p>
+  </footer>
+
+  <script src="forum.js"></script>
+  <script>
+    document.getElementById('create-post-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('content').value;
+
+      fetch('http://localhost:3000/api/posts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ title, content })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success') {
+          document.getElementById('response-message').textContent = data.message;
+          document.getElementById('create-post-form').reset();
+        } else {
+          document.getElementById('response-message').textContent = 'Error creating post.';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('response-message').textContent = 'An error occurred.';
+      });
+    });
+  </script>
+</body>
+</html>

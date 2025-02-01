@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Your Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Water Conservation Knowledge Hub</h1>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="forum.html">Community Forum</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="progress-section">
+      <h2>Track Your Water Conservation Progress</h2>
+      <p>Log how much water you've saved compared to yesterday and share your experiences in the community forum.</p>
+      
+      <form action="forum.html" method="GET">
+        <label for="water-saved">Enter the amount of water saved today (liters):</label>
+        <input type="number" id="water-saved" name="water-saved" required placeholder="e.g., 5">
+        
+        <button type="submit" class="btn">Submit and Share Your Experience</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Water Conservation Wiki</p>
+  </footer>
+  <script>
+    document.querySelector('.button[href="check-progress.html"]').addEventListener('click', function(event) {
+      // Optional confirmation or interaction
+      alert('Redirecting to the Check Your Progress page!');
+    });
+  </script>
+</body>
+</html>

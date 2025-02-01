@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Conservation Knowledge Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Water Conservation Knowledge Hub</h1>
+    <nav>
+      <ul class="navbar">
+        <div class="nav-left">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="forum.html">Community Forum</a></li>
+        </div>
+        <div class="nav-right">
+          <li><a href="login.html" class="login-btn">Login</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <style>
+    /* Navbar Styling */
+    .navbar {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #0077b6;
+      margin: 0;
+    }
+  
+    .nav-left,.nav-right {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav-left li, .nav-right li {
+      list-style: none;
+      margin: 0 15px;
+    }
+  
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 15px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+  
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  
+    /* Login Button */
+    .login-btn {
+      background: rgb(21, 21, 21);
+      color: #333;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+  
+    .login-btn:hover {
+      background: #ffcc00;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+      }
+  
+      .nav-left, .nav-right {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+  
+      .nav-left li, .nav-right li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+  
+  
+
+<main>
+  <section id="content-container">
+    <section id="article-list">
+      <h2>Water Efficiency Techniques</h2>
+      
+      <article class="article-preview">
+        <h3><a href="content.html?id=drip-irrigation">Efficient Drip Irrigation Techniques</a></h3>
+        <p>Learn about how drip irrigation can save water and increase crop yield...</p>
+      </article>
+
+      <article class="article-preview">
+        <h3><a href="content.html?id=mulching">Using Mulching to Retain Soil Moisture</a></h3>
+        <p>Discover how mulching can help reduce water evaporation from soil...</p>
+      </article>
+
+      <article class="article-preview">
+        <h3><a href="content.html?id=rainwater-harvesting">Rainwater Harvesting Systems</a></h3>
+        <p>Learn how to collect and store rainwater for agricultural and household use...</p>
+      </article>
+      
+    </section>
+
+    <section id="water-heroes">
+      <h2>Stories of Water Heroes</h2>
+
+      <article class="article-preview">
+        <h3><a href="content.html?id=village-rainwater">The Village That Transformed with Rainwater Harvesting</a></h3>
+        <p>Read about how one village’s effort turned a water crisis into an abundant water source...</p>
+      </article>
+
+      <article class="article-preview">
+        <h3><a href="content.html?id=farmer-innovation">A Farmer's Innovation: Saving Water with Smart Solutions</a></h3>
+        <p>Discover how a farmer developed an ingenious solution to cut water use by half...</p>
+      </article>
+
+    </section>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Water Conservation </p>
+</footer>
+
+</body>
+</html>
